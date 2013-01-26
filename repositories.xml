@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>neuroscience</name>
+    <description lang="en">Neuroscience-related (EEG, fMRI) ebuilds</description>
+    <homepage>https://github.com/abarbu/neuroscience-gentoo</homepage>
+    <owner type="person">
+      <email>andrei@0xab.com</email>
+      <name>Andrei Barbu</name>
+    </owner>
+    <source type="rsync">/home/andrei/work/fmri/ebuilds</source>
+    <source type="git">git://github.com/abarbu/neuroscience-gentoo.git</source>
+  </repo>
+</repositories>
