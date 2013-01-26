@@ -33,7 +33,6 @@ S="${WORKDIR}/${SRC_NAME}"
 
 AFNI_DIR="${EPREFIX}/usr/$(get_libdir)/${PN}"
 
-#			   -e "s:INSTALLDIR = ./linux_gcc33_64:INSTALLDIR = ${D}:"
 # TODO This does not replace all of AFNI's calls to gcc
 src_configure() {
 	use amd64 && \
