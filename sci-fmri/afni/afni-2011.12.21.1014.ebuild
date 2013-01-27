@@ -1,6 +1,8 @@
 # Copyright 2013 Andrei Barbu, Purdue University
 # Distributed under the terms of the GNU General Public License v2
 
+# TODO This install is messy
+
 EAPI=4
 
 inherit eutils versionator
@@ -63,7 +65,7 @@ src_install() {
 	cat > 99afni <<EOF
 LDPATH=${AFNI_DIR}
 PATH=${AFNI_DIR}
-AFNI_PLUGINPATH=${AFNI_DIR}/plugins/
+AFNI_PLUGINPATH=${AFNI_PLUGINPATH}:${AFNI_DIR}/plugins/
 EOF
 	doenvd 99afni
 	elog "Copy ${AFNI_DIR}/AFNI.afnirc and ${AFNI_DIR}/AFNI.sumarc into ~/.afnirc and ~/.sumarc"
