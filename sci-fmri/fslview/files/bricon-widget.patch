@@ -1,0 +1,22 @@
+--- src/fslview/briconwidgetbase.ui      2013-01-27 05:17:12.908614593 -0500
++++ src/fslview/briconwidgetbase.ui     2013-01-27 05:17:28.795616243 -0500
+@@ -141,9 +141,6 @@
+        <property name="tickCnt">
+         <number>20</number>
+        </property>
+-       <property name="internalBorder">
+-        <number>1</number>
+-       </property>
+       </widget>
+      </item>
+      <item>
+@@ -169,9 +166,6 @@
+        <property name="tickCnt">
+         <number>20</number>
+        </property>
+-       <property name="internalBorder">
+-        <number>1</number>
+-       </property>
+       </widget>
+      </item>
+     </layout>

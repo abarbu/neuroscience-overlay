@@ -1,7 +1,6 @@
 = Gentoo Neuroscience overlay =
 
-This is a Gentoo overlay that provides various neuroscience tools. At
-the moment it only provides AFNI but that will change over time.
+This is a Gentoo overlay that provides various neuroscience tools.
 
 To use it install layman and edit your /etc/layman/layman.cfg
 to read:

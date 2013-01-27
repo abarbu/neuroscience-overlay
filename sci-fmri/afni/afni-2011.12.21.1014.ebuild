@@ -60,11 +60,11 @@ src_install() {
 	find . -type f -name "*.so" -exec doexe {} \; -exec rm {} \;
 	insinto ${AFNI_DIR}
 	doins *
-	cat > 99afni <<-EOF
-		LDPATH=${AFNI_DIR}
-		PATH=${AFNI_DIR}
-		AFNI_PLUGINPATH=${AFNI_DIR}/plugins/
-	EOF
+	cat > 99afni <<EOF
+LDPATH=${AFNI_DIR}
+PATH=${AFNI_DIR}
+AFNI_PLUGINPATH=${AFNI_DIR}/plugins/
+EOF
 	doenvd 99afni
 	elog "Copy ${AFNI_DIR}/AFNI.afnirc and ${AFNI_DIR}/AFNI.sumarc into ~/.afnirc and ~/.sumarc"
 }
