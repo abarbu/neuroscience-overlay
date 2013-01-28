@@ -28,6 +28,8 @@ DEPEND="app-shells/tcsh
 		virtual/glu
 		net-misc/wget
 		net-misc/python:2.7
+		dev-python/wxpython
+		dev-python/matplotlib
 		R? ( dev-lang/R )"
 RDEPEND="${DEPEND}"
 
@@ -56,6 +58,9 @@ src_install() {
 	for i in README*; do dodoc "${i}" && rm "${i}"; done
 	dodoc afnigui.html && rm "${i}"
 	exeinto ${AFNI_DIR}
+	# This is required, it clashes with python's io
+	# Doesn't seem to be called from anywhere at the moment
+	mv io.py io1.py || die "failed to move io.py"
 	find . -type f ! -name "*.*" -exec doexe {} \; -exec rm {} \;
 	find . -type f -name "*.py" -exec doexe {} \; -exec rm {} \;
 	find . -type f -name "*.R" -exec doexe {} \; -exec rm {} \;
