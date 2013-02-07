@@ -10,6 +10,6 @@
       <name>Andrei Barbu</name>
     </owner>
     <source type="rsync">/home/andrei/work/fmri/ebuilds</source>
-    <source type="git">git://github.com/abarbu/neuroscience-gentoo.git</source>
+    <source type="git">git://github.com/abarbu/neuroscience-overlay.git</source>
   </repo>
 </repositories>
