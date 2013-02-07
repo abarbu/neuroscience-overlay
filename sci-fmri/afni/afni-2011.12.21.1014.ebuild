@@ -27,7 +27,7 @@ DEPEND="app-shells/tcsh
 		sys-libs/zlib
 		virtual/glu
 		net-misc/wget
-		net-misc/python:2.7
+		dev-lang/python:2.7
 		dev-python/wxpython
 		dev-python/matplotlib
 		R? ( dev-lang/R )"
