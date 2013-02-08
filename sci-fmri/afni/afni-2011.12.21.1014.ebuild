@@ -60,7 +60,7 @@ src_install() {
 	exeinto ${AFNI_DIR}
 	# This is required, it clashes with python's io
 	# Doesn't seem to be called from anywhere at the moment
-	mv io.py io1.py || die "failed to move io.py"
+	mv io.py io1.py
 	find . -type f ! -name "*.*" -exec doexe {} \; -exec rm {} \;
 	find . -type f -name "*.py" -exec doexe {} \; -exec rm {} \;
 	find . -type f -name "*.R" -exec doexe {} \; -exec rm {} \;
