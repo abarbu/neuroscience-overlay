@@ -4,7 +4,7 @@
   <repo quality="experimental" status="unofficial">
     <name>neuroscience</name>
     <description lang="en">Neuroscience-related (EEG, fMRI) ebuilds</description>
-    <homepage>https://github.com/abarbu/neuroscience-gentoo</homepage>
+    <homepage>https://github.com/abarbu/neuroscience-overlay</homepage>
     <owner type="person">
       <email>andrei@0xab.com</email>
       <name>Andrei Barbu</name>
