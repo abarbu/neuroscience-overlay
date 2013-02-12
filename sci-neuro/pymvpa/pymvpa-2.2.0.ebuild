@@ -1,12 +1,7 @@
-# Copyright 1999-2011 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pywavelets/pywavelets-0.2.0.ebuild,v 1.1 2010/04/22 20:14:30 bicatali Exp $
-
 EAPI=2
 
 PYTHON_DEPEND="3"
 SUPPORT_PYTHON_ABIS="1"
-#RESTRICT_PYTHON_ABIS="3.*"
 
 inherit distutils
 
@@ -27,9 +22,10 @@ DEPEND="
 		dev-python/numpy
 		sys-apps/help2man
 		doc? ( dev-python/sphinx media-gfx/graphviz )
-		test? ( dev-python/nose )"
+		test? ( dev-python/nose )
+		sci-neuro/nibabel"
 
-# TODO, nibabel and tutorial data
+# TODO tutorial data
 
 RDEPEND="dev-python/numpy
 		 dev-python/hcluster
