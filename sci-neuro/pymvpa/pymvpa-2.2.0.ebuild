@@ -20,6 +20,7 @@ DEPEND="
 		dev-lang/swig
 		dev-python/lxml
 		dev-python/numpy
+		dev-python/nose
 		sys-apps/help2man
 		doc? ( dev-python/sphinx media-gfx/graphviz )
 		test? ( dev-python/nose )
