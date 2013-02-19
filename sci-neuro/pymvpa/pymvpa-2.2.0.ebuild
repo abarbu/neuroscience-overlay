@@ -21,6 +21,7 @@ DEPEND="
 		dev-python/lxml
 		dev-python/numpy
 		dev-python/nose
+		dev-python/pywavelets
 		sys-apps/help2man
 		doc? ( dev-python/sphinx media-gfx/graphviz )
 		test? ( dev-python/nose )
