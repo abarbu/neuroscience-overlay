@@ -34,8 +34,9 @@ src_configure() {
 }
 
 src_compile() {
-	tocuh build.log
-	./build || die "failed to build"
+	touch build.log
+	./build
+        ./build
 }
 
 src_install() {
@@ -47,7 +48,7 @@ FSLMULTIFILEQUIT=TRUE
 FSLTCLSH=${FSL_DIR}/bin/fsltclsh
 FSLWISH=${FSL_DIR}/bin/fslwish
 FSLCONFDIR=${FSL_DIR}/config
-FSLMACHTYPE=`${FSL_DIR}/etc/fslconf/fslmachtype.sh`
+FSLMACHTYPE=`sh ${FSL_DIR}/etc/fslconf/fslmachtype.sh`
 EOF
 	doenvd 99fsl
 	insinto ${FSL_DIR}

@@ -28,13 +28,14 @@ DEPEND="
 		sci-neuro/nibabel"
 
 # TODO tutorial data
+# sci-fmri/fsl
 
 RDEPEND="dev-python/numpy
 		 dev-python/hcluster
 		 dev-python/matplotlib
 		 dev-python/rpy
 		 sci-fmri/afni
-		 sci-fmri/fsl
 		 sci-libs/libsvm
-		 sci-libs/scipy
-		 sci-libs/shogun[python]"
+		 sci-libs/scipy"
+
+#		 sci-libs/shogun[python]"
