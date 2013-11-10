@@ -1,0 +1,11 @@
+--- src/fslview/CMakeLists.txt 2013-11-09 21:40:20.500601607 -0500
++++ src/fslview/CMakeLists.txt      2013-11-09 21:40:29.274602254 -0500
+@@ -250,7 +250,7 @@
+ TARGET_LINK_LIBRARIES( fslview miscmaths newmat utils )
+ #TARGET_LINK_LIBRARIES( fslview qassistantclient )
+ TARGET_LINK_LIBRARIES( fslview ${QWT_LIBRARIES} )
+-TARGET_LINK_LIBRARIES( fslview vtkHybrid vtkWidgets QVTK )
++TARGET_LINK_LIBRARIES( fslview vtkCharts vtkCommon vtkDICOMParser vtkFiltering vtkGenericFiltering vtkGeovis vtkGraphics vtkHybrid vtkIO vtkImaging vtkInfovis vtkNetCDF vtkNetCDF_cxx vtkParallel vtkRendering vtkViews vtkVolumeRendering vtkWidgets vtkalglib vtkexoIIc vtkftgl vtkmetaio vtkproj4 vtksqlite vtksys vtkverdict QVTK )
+ 
+ IF(UNIX)
+ #  TARGET_LINK_LIBRARIES( fslview ${FSLVIEW_BINARY_DIR}/lib/libfslio.a )
